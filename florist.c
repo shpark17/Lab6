@@ -67,9 +67,11 @@ double getCost(Flower flower, Color  color, Arrangement arr) {
 	  additionalCost = 50;
   }  if(color == White && flower == Roses) {
 	  additionalCost = 40;
+  }	  
   //TODO: add additional cost for vases
   if(arr == Vase) {
 	  additionalCost2 = flowerCost + 10;
+  }
   //TODO: return the total cost here
   cost = flowerCost + additionalCost + additionalCost2;
 return cost;
