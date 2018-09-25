@@ -3,7 +3,7 @@
 #include<math.h>
 
 /* 1. Insert the required items in the other 2 enumerated types*/
-typedef enum { RED = 1, WHITE } Color;
+typedef enum { Red = 1, White } Color;
 typedef enum { Roses = 1, Lilies, Daisies } Flower;
 typedef enum { Bonquet = 1, Vase } Arrangement;
 
