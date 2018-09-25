@@ -1,5 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
+#include<math.h>
 
 /* 1. Insert the required items in the other 2 enumerated types*/
 typedef enum { RED = 1, WHITE } Color;
@@ -14,7 +15,7 @@ int main (int argc, char **argv) {
     //You can declare variables that hold your enums just like regular variables
 	double Flower flower;
 	double Color  color;
-	double Arrangements arr;
+	double Arrangement arr;
 	/* 3. Declare the other required variable(s)*/
 	
 	//DO NOT CHANGE THIS BLOCK OF printf AND scanf STATEMENTS	
@@ -45,16 +46,29 @@ int main (int argc, char **argv) {
 }
 
 /* 2. Implement the function getCost */
-getCost(Flower flower, Color  color, Arrangement arr) {
-
+double getCost(Flower flower, Color  color, Arrangement arr) {
+	double flowerCost = 0;
+	double additionalCost, additionalCost2;
   //you can use your enum in expressions
   //Possible example: if(flower == Rose) {...}
-  if(flower == Rose) 
   //TODO: Compute the base price here
-  
+  if(flower == Roses) {
+	flowerCost = 30;
+  }  if(flower == Lilies) {
+	flowerCost = 20;
+  }  if(flower == Daisies) {
+	  flowerCost = 45;
+  } 
   //TODO: add additional color-flower costs here 
-  
+  if(color == Red && flower == Lilies) {
+	  additionalCost = 25;
+  }  if(color == Red && flower == Daisies) {
+	  additionalCost = 50;
+  }  if(color == White && flower == Roses) {
+	  additionalCost = 40;
   //TODO: add additional cost for vases
-
+  if(arr == Vase) {
+	  additionalCost2 = flowerCost + 10
   //TODO: return the total cost here
+return cost = flowerCost + additionalCost + additionalCost2	  
 }
