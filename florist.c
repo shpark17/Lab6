@@ -13,9 +13,9 @@ double getCost(Flower flower, Color  color, Arrangement arr);
 int main (int argc, char **argv) {
 
     //You can declare variables that hold your enums just like regular variables
-	double Flower flower;
-	double Color  color;
-	double Arrangement arr;
+	Flower flower;
+	Color  color;
+	Arrangement arr;
 	/* 3. Declare the other required variable(s)*/
 	
 	//DO NOT CHANGE THIS BLOCK OF printf AND scanf STATEMENTS	
@@ -39,7 +39,7 @@ int main (int argc, char **argv) {
 	scanf("%d", &arr);
 	
 	/*4  complete the  function call  and print the cost*/
-	double cost = getCost();
+	double cost = getCost(Flower flower, Color  color, Arrangement arr);
 	printf("Your total cost is $%f\n", cost);
 	
 	return 0;
