@@ -48,6 +48,7 @@ int main (int argc, char **argv) {
 /* 2. Implement the function getCost */
 double getCost(Flower flower, Color  color, Arrangement arr) {
 	double flowerCost = 0;
+	double cost = 0;
 	double additionalCost, additionalCost2;
   //you can use your enum in expressions
   //Possible example: if(flower == Rose) {...}
@@ -70,6 +71,6 @@ double getCost(Flower flower, Color  color, Arrangement arr) {
   if(arr == Vase) {
 	  additionalCost2 = flowerCost + 10;
   //TODO: return the total cost here
-  printf("Your total cost is %f\n", cost);
-return cost = flowerCost + additionalCost + additionalCost2
+  cost = flowerCost + additionalCost + additionalCost2;
+return cost;
 }
