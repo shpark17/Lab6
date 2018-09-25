@@ -76,6 +76,6 @@ double getCost(Flower flower, Color  color, Arrangement arr) {
 	  additionalCost2 = 10;
   }
   //TODO: return the total cost here
-  cost = flowerCost + additionalCost + additionalCost2;
-return cost;
+  totalCost = flowerCost + additionalCost + additionalCost2;
+return totalCost;
 }
