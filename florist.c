@@ -70,7 +70,6 @@ double getCost(Flower flower, Color  color, Arrangement arr) {
   if(arr == Vase) {
 	  additionalCost2 = flowerCost + 10;
   //TODO: return the total cost here
-return cost = flowerCost + additionalCost + additionalCost2
   printf("Your total cost is %f\n", cost);
-
+return cost = flowerCost + additionalCost + additionalCost2
 }
