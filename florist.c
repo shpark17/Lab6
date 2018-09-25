@@ -10,6 +10,7 @@ typedef enum { Bonquet = 1, Vase } Arrangement;
 /*Function prototype */
 double getCost(Flower flower, Color  color, Arrangement arr);
 
+
 int main (int argc, char **argv) {
 
     //You can declare variables that hold your enums just like regular variables
@@ -61,13 +62,13 @@ double getCost(Flower flower, Color  color, Arrangement arr) {
 	  flowerCost = 45;
   } 
   //TODO: add additional color-flower costs here 
-  if(color == Red && flower == Lilies) {
+  if(flower == Lilies && color == Red) {
 	  additionalCost = 5;
-  }  if(color == Red && flower == Daisies) {
+  }  if(flower == Daisies && color == Red) {
 	  additionalCost = 5;
-  }  if(color == White && flower == Roses) {
+  }  if(flower == Roses && color == White) {
 	  additionalCost = 10;
-  }  if(color == White && flower == Daisies) {
+  }  if(flower == Daisies && color == White ) {
 	  additionalCost = 0;
   }
   //TODO: add additional cost for vases
