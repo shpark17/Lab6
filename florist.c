@@ -3,8 +3,8 @@
 
 /* 1. Insert the required items in the other 2 enumerated types*/
 typedef enum { RED = 1, WHITE } Color;
-typedef enum {} Flower;
-typedef enum {} Arrangement;
+typedef enum { Roses = 1, Lilies, Daisies } Flower;
+typedef enum { Bonquet = 1, Vase } Arrangement;
 
 /*Function prototype */
 double getCost(Flower flower, Color  color, Arrangement arr);
@@ -12,8 +12,9 @@ double getCost(Flower flower, Color  color, Arrangement arr);
 int main (int argc, char **argv) {
 
     //You can declare variables that hold your enums just like regular variables
-	Flower flower;
-	Color  color;
+	double Flower flower;
+	double Color  color;
+	double Arrangements arr;
 	/* 3. Declare the other required variable(s)*/
 	
 	//DO NOT CHANGE THIS BLOCK OF printf AND scanf STATEMENTS	
@@ -37,8 +38,8 @@ int main (int argc, char **argv) {
 	scanf("%d", &arr);
 	
 	/*4  complete the  function call  and print the cost*/
-	cost = getCost();
-	printf();
+	double cost = getCost();
+	printf("Your total cost is $%f\n", cost);
 	
 	return 0;
 }
@@ -48,7 +49,7 @@ getCost(Flower flower, Color  color, Arrangement arr) {
 
   //you can use your enum in expressions
   //Possible example: if(flower == Rose) {...}
-
+  if(flower == Rose) 
   //TODO: Compute the base price here
   
   //TODO: add additional color-flower costs here 
