@@ -39,7 +39,7 @@ int main (int argc, char **argv) {
 	scanf("%d", &arr);
 	
 	/*4  complete the  function call  and print the cost*/
-	double cost = getCost(Flower flower, Color  color, Arrangement arr);
+	double cost = getCost(flower, color, arr);
 	printf("Your total cost is $%f\n", cost);
 	
 	return 0;
