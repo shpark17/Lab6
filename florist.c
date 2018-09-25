@@ -8,7 +8,11 @@ typedef enum { Roses = 1, Lilies, Daisies } Flower;
 typedef enum { Bonquet = 1, Vase } Arrangement;
 
 /*Function prototype */
-double getCost(Flower flower, Color  color, Arrangement arr);
+int getCost(double *cost, Flower flower, Color color, Arrangement arr)
+  if(flower == Daisies && color == red) {
+    printf("We are out of Red Daisies\n")
+  return 1; }	else {
+	  return 0; }
 
 
 int main (int argc, char **argv) {
